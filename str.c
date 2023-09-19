@@ -26,7 +26,7 @@ int  string_cmp(char *s, char *s1)
 }
 
 /**
- * _strlen - returns the length of a string
+ * string_len - returns the length of a string
  * @s: the string whose length to check
  * Return: integer length of string
  */
