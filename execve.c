@@ -4,7 +4,7 @@
  * @order_words: array of arguments
  * @argv: previous pointer
  * @n: old size of previous pointer
- * @ix: an input
+ * @ix: new size for our pointer
  * Return: array of pointers to words
  */
 int _execv(char **order_words, int n, char **argv, int ix)
@@ -26,8 +26,7 @@ int _execv(char **order_words, int n, char **argv, int ix)
 				free(k);
 			k = NULL; }
 			else if (ix > 1)
-			{
-				h = ix; }
+				h = ix;
 			free_the_array(order_words);
 			exit(h); }
 		cmd = get_path(order_words[0]);
