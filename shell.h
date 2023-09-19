@@ -14,7 +14,7 @@
 extern char **environ;
 char *habiba_read(void);
 char **abdelhamid_tokin(char *order, int *n);
-int _execv(char **order_words,int n, char **argv, int ix);
+int _execv(char **order_words, int n, char **argv, int ix);
 char *string_cpy(char *dest, char *src);
 char *string_cat(char *destination, char *source);
 int string_len(char *s);
